@@ -1,6 +1,6 @@
 def hello():
     for i in range(1, 11):
-        print("Hello:", 1)
+        print("Hello:", i)
 
 
 def hi():
