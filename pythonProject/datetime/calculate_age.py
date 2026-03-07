@@ -1,12 +1,13 @@
 import datetime
 
-dob = datetime.date(2003,3,2)
+dob = datetime.date(2004, 4, 13)
 today = datetime.date.today()
 
-age = today.year-    dob.year
+age = today.year - dob.year
 
-if (today.month, today.day) <(dob.month , dob.day):
 
-    age -= 1
+# Day name of DOB
+day_name = dob.strftime("%A")
 
-print("your age  is ", age )
+print("Your age is:", age)
+print("You were born on:", day_name)

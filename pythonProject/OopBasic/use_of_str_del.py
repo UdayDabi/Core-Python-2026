@@ -14,9 +14,11 @@ class Person:
 
 # Create an instance of Person
 person = Person("abc", 30)
+p1 = Person("xyz", 25)
 
 # Print the string representation of the object
 print(person)
+print(p1)
 
 # Delete the object explicitly (triggers the __del__ method)
 # del person

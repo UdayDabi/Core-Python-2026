@@ -1,6 +1,3 @@
-from OopBasic.use_of_str_del import person
-
-
 class Person:
     count = 0  # Class variable shared among all instances
 
@@ -25,19 +22,15 @@ class Person:
 # Create first Person object
 p = Person()
 p.set_name('abc')
+p.set_address('123 Indore')
 print('Name:', p.get_name())
-print("Person __doc__",person.__doc__)
-print("Person Name",person.name)
-print("Person __module__",person.__module__)
-print("Person __dict__",person.__dict__)
-
-
+print('Address:', p.get_address())
 print('Count:', Person.count)
 print('Memory address of p:', id(p))
 
 # Create second Person object
-# p1 = Person()
-# p1.set_name('xyz')
-# print('Name:', p1.get_name())
-# print('Count:', Person.count)
-# print('Memory address of p1:', id(p1))
+p1 = Person()
+p1.set_name('xyz')
+print('Name:', p1.get_name())
+print('Count:', Person.count)
+print('Memory address of p1:', id(p1))

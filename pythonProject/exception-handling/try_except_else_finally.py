@@ -1,12 +1,16 @@
-a = 10
-b = 2
 
 try:
     # Code jisme error aasakta hai
+    a = 10
+    b = u
     c = a / b
     print('division:', c)
 except ZeroDivisionError as e:
     # Error aane par ye chalega
+    print('exception:', e)
+except ValueError:
+     print("Please number hi daalna tha")
+except Exception as e:
     print('exception:', e)
 else:
     # Jab try me koi error NA aaye to ye chalega
@@ -38,6 +42,6 @@ finally:
 #     num = int(input("Enter a number: "))
 #     print("Square is:", num * num)
 # except ValueError:
-#     print("Please number hi daalna tha")
+#      print("Please number hi daalna tha")
 # finally:
 #     print("Program end")  # ✅ Always

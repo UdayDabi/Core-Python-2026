@@ -1,18 +1,17 @@
 class Shape:
     def area(self):
-        print('Shape  Area Method')
+       return print("Shape Area")
 
 
 class Rectangle(Shape):
 
     def area(self):
-        print('Rectangle Area Method')
-
+        return print("Rectangle Area")
 
 r = Rectangle()
 r.area()
 
-s = Shape
+s = Shape()
 s.area()
 
 shape: Shape = Rectangle()

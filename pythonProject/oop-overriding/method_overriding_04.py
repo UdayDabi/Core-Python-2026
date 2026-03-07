@@ -1,4 +1,3 @@
-
 # Base class
 from typing import List
 
@@ -35,10 +34,7 @@ class Circle(Shape):
 
 
 # Define a list of Shape objects
-shapes: List[Shape] = [
-    Rectangle(5, 10),
-    Circle(7)
-]
+shapes: List[Shape] = [Circle(7), Rectangle(5, 10), ]
 
 # Loop over the list and call area
 for shape in shapes:

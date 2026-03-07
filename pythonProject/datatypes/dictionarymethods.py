@@ -4,13 +4,13 @@ dict_example = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
 
 # clear() - Removes all items from the dictionary
-dict_example.clear()
-print("Dictionary after clear():", dict_example)
-
-# Reinitialize dictionary for other examples
-dict_example = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-dict_copy=    dict_example.copy()
-print("Dictionary copy:", dict_copy)
+# dict_example.clear()
+# print("Dictionary after clear():", dict_example)
+#
+# # Reinitialize dictionary for other examples
+# dict_example = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+# dict_copy=    dict_example.copy()
+# print("Dictionary copy:", dict_copy)
 
 
 # fromkeys() - Returns a dictionary with specified keys and their associated values

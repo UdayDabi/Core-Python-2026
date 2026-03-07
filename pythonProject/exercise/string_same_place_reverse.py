@@ -2,6 +2,7 @@
 name = "vijay dinanath chouhan"
 words = name.split()  # ['vijay', 'dinanath', 'chouhan']
 
+
 for word in words:
     reversed_word = ""
     for char in word:

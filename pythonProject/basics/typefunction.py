@@ -3,7 +3,13 @@ age = 16
 amount = 99.99
 condition =True
 
-print("type",type(name))
-print("type",type(age))
-print("type",type(amount))
-print("type",type(condition))
+# print("name",name)
+# print("age",age)
+# print("amount",amount)
+# print("condition",condition)
+
+
+print("type name",type(name))
+print("type age ",type(age))
+print("type amount",type(amount))
+print("type  condition",type(condition))

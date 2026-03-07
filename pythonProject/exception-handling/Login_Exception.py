@@ -8,10 +8,11 @@ Login_id = "Admin"
 Password = "Admin"
 
 try:
-    if Login_id == 'admin' and Password == 'Admin':
+    if Login_id == 'Admin' and Password == 'Admin':
         print("Valid User")
 
     else:
         raise LoginException("InValud User")
+
 except LoginException as e:
     print('LoginException', e)

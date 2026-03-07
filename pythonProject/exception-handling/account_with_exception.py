@@ -1,3 +1,6 @@
+from itertools import count
+
+
 class InsufficientFundException(Exception):
     def __init__(self, msg):
         super().__init__(msg)
@@ -6,6 +9,7 @@ class InsufficientFundException(Exception):
 class Account:
     def __init__(self):
         self.balance = 0
+        self.count = 0
 
     def set_balance(self, balance):
         self.balance = balance
@@ -18,8 +22,15 @@ class Account:
         print(f"Deposited: {amount}, Current Balance: {self.balance}")
 
     def withdrawal(self, amount):
+        if amount < 20000:
+            raise InsufficientFundException("You cannot withdraw more than ₹2000 in a single transaction.")
+
+        if self.count >= 2:
+            raise InsufficientFundException("Withdrawal limit exceeded. Maximum 3 withdrawals allowed.")
+
         if self.balance - amount >= 2000:
             self.balance -= amount
+            self.count += 1
             print(f"Withdrew: {amount}, Remaining Balance: {self.balance}")
         else:
             raise InsufficientFundException("Insufficient balance. Minimum ₹2000 must remain in the account.")
@@ -27,11 +38,13 @@ class Account:
 
 # Example
 acc = Account()
-acc.set_balance(5000)
+acc.set_balance(50000)
 
 try:
     acc.deposit(2000)  # balance = 7000
     acc.withdrawal(3000)  # balance = 4000
-    acc.withdrawal(2500)  # will raise exception (balance would go below 2000)
+    acc.withdrawal(2500)
+    # will raise exception (balance would go below 2000)
+# acc.withdrawal(2500)  # will raise exception (balance would go below 2000)
 except InsufficientFundException as e:
     print("exception:", e)

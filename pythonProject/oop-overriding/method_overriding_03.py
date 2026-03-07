@@ -1,4 +1,3 @@
-
 class Shape:
     def execute(self):
         if self.validate():
@@ -9,7 +8,7 @@ class Shape:
     def validate(self):
         return False
 
-    def area(self):
+    def area(self):#
         print('Shape Area Method')
 
 
@@ -64,11 +63,11 @@ c.execute()
 print("\n--- Invalid Rectangle ---")
 r_invalid = Rectangle(-5, 10)
 r_invalid.execute()
-
-print("\n--- Invalid Circle ---")
-c_invalid = Circle(0)
-c_invalid.execute()
-
+#
+# print("\n--- Invalid Circle ---")
+# c_invalid = Circle(0)
+# c_invalid.execute()
+#
 print("\n--- Test ---")
 t = Test()
 t.execute()

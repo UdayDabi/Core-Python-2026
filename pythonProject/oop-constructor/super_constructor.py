@@ -1,5 +1,6 @@
 class Shape:
     def __init__(self, color, borderWidth):
+        print("Shape Constructor Called")
         self.color = color
         self.borderWidth = borderWidth
 

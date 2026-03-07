@@ -10,21 +10,23 @@ class Shape(ABC):
     def area(self):
         pass
 
-
-class Rectangle(Shape):
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
-
-    def area(self):
-        rectangle_area = self.length * self.width
-        print("Rectangle  area :", rectangle_area)
-        return rectangle_area
+s = Shape
 
 
-# Example usage
-r = Rectangle(5, 10)
-r.execute()
-# Polymorphism: Shape type reference holding Rectangle object
-shape: Shape = Rectangle(5, 10)
-shape.execute()
+# class Rectangle(Shape):
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+#
+#     def area(self):
+#         rectangle_area = self.length * self.width
+#         print("Rectangle  area :", rectangle_area)
+#         return rectangle_area
+#
+#
+# # Example usage
+# r = Rectangle(5, 10)
+# r.execute()
+# # Polymorphism: Shape type reference holding Rectangle object
+# shape: Shape = Rectangle(5, 10)
+# shape.execute()

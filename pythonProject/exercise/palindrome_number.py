@@ -11,4 +11,4 @@ while n > 0:
 if sum == number:
     print("Palindrome Number:", number)
 else:
-    print("Not Palindrome Number:", number)
+    print("Not Palindrome Number:", number,"After Palindrom ",sum)
