@@ -25,18 +25,26 @@ class Marks(Test):
         print("Age:", self.age)
         print("Gender:", self.gender)
         print("Class:", self.studentClass)
+        print("Literature:", self.literature)
+        print("Math:", self.math)
+        print("Biology:", self.biology)
+        print("Physics:", self.physics)
         total_marks = self.literature + self.math + self.biology + self.physics
+        if total_marks > 100:
+            print("Passed")
+        else:
+            print("Failed")
         print("Total Marks:", total_marks)
 
 
 # Create an object of Marks class
 m = Marks()
-
-# Collect student details
+#
+# # Collect student details
 m.getStudent()
-
-# Collect marks details
+#
+# # Collect marks details
 m.getMarks()
-
-# Display all information
+#
+# # Display all information
 m.display()

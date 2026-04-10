@@ -3,6 +3,7 @@ def writeFile():
     file.write("Hi\n")
     file.write("Hello Uday Dabi\n")
     file.write("This is Python file")
+    print("File Write Succssfully")
     file.close()
 
 

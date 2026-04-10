@@ -8,4 +8,3 @@ except Exception as e:
     print('exception:', e)
 
 print('after')
-10

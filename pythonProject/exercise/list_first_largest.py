@@ -1,5 +1,5 @@
 number = [10, 80, 50, 40, 60, 20, 100]
-largest = number[0]
+largest = 0
 for num in number:
     if num > largest:
         largest = num

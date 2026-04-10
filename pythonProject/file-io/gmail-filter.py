@@ -13,6 +13,7 @@ def readLine():
     for line in input_file:
         if (re.search("@gmail.com", line)):
             output_file.write(line)
+            print(line)
     input_file.close()
     output_file.close()
 

@@ -4,7 +4,7 @@ a = 10
 b = 0
 
 try:
-    c = a / a
+    c = a / 0
     print('division:', c)
 except IndexError as e:
     print('TypeError exception:', e)

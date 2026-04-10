@@ -1,2 +1,2 @@
-for i in range(10):
-    print("Sandeep Verma....!!",i)
+for i in range(5):
+    print("Hello World",i)

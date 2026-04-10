@@ -20,6 +20,13 @@ class Rectangle(Shape):
         return rectangle_area
 
 
+class Triangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+
+
 # Another child class overriding area()
 class Circle(Shape):
     PI = 3.14  # Class-level constant
@@ -34,7 +41,7 @@ class Circle(Shape):
 
 
 # Define a list of Shape objects
-shapes: List[Shape] = [Circle(7), Rectangle(5, 10), ]
+shapes: List[Shape] = [Circle(7), Rectangle(5, 10),Triangle(10, 5)]
 
 # Loop over the list and call area
 for shape in shapes:

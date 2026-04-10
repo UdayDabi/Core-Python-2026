@@ -1,7 +1,8 @@
-number = 153
+
+number= 153
 n = number
 sum = 0
-rem = 0
+r = 0
 
 while n > 0:
     r = n % 10
@@ -9,6 +10,6 @@ while n > 0:
     n = n // 10
 
 if sum == number:
-    print("this is amstrong", number)
+    print("this is amstrong", n)
 else:
     print("not arms")

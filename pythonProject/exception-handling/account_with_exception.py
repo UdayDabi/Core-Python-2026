@@ -39,11 +39,13 @@ class Account:
 # Example
 acc = Account()
 acc.set_balance(50000)
+print(acc.get_balance())
 
 try:
     acc.deposit(2000)  # balance = 7000
     acc.withdrawal(3000)  # balance = 4000
     acc.withdrawal(2500)
+    acc.withdrawal(21000)
     # will raise exception (balance would go below 2000)
 # acc.withdrawal(2500)  # will raise exception (balance would go below 2000)
 except InsufficientFundException as e:

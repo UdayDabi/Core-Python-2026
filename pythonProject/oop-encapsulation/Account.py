@@ -49,6 +49,8 @@ print("Account Number:", acc.get_number())
 print("Account Type:", acc.get_account_type())
 print("Balance:", acc.get_balance())
 
-print("\nPerforming transactions:")
-acc.deposit(500)
-acc.withdrawal(2000)
+acc1 = Account()
+
+# print("\nPerforming transactions:")
+# acc.deposit(500)
+# acc.withdrawal(2000)

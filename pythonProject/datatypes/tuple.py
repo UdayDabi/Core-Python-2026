@@ -15,6 +15,6 @@ print(len(t3))
 print(tuple.count(100.10))
 print(tuple.index("abc"))
 print(tuple1.index(100.10))
-
-print(tuple1.index(100.10, 3))
+#
+# print(tuple1.index(100.10, 3))
 

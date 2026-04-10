@@ -3,8 +3,11 @@ a = 10
 b = 0
 print('mid')
 
-c = a / b
-
-print('division', c)
-
+try:
+    c = a / b
+    print('division:', c)
+except ZeroDivisionError as e:
+    print('TypeError exception:', e)
+except Exception as e:
+    print('Exception:', e)
 print('after')

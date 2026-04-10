@@ -1,5 +1,7 @@
-i = 1
-
-while i <= 10:
-    print("Hello python ", i)
+i = 0
+while i < 5:
+    print("Hello World",i)
     i += 1
+
+
+

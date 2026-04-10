@@ -1,8 +1,8 @@
-str = "Aditya is a good boy"
+str = "Aditya is a good boyY"
 
 count = 0
 
 for i in str:
-    if i == "a" or i == "A":
+    if i == "y"or i == "Y":
         count += 1
 print("count=", count)

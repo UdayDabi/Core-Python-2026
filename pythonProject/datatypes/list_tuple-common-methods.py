@@ -1,14 +1,14 @@
-list = [5, 10, 15, 10, 25, 10, 30]
-
-
-print("list count(10):", list.count(10))
-print("list index(15)",list.index(15))
-print("Lenght or list", len(list))
-print("Max value in list:", max(list))
-print("Min value in list:", min(list))
-print("Sum of list values:", sum(list))
-print("Is 25 in list?", 25 in list)
-print("Is 50 not in list?", 50  not in list)
+# list = [5, 10, 15, 10, 25, 10, 30]
+#
+#
+# print("list count(10):", list.count(10))
+# print("list index(15)",list.index(15))
+# print("Lenght or list", len(list))
+# print("Max value in list:", max(list))
+# print("Min value in list:", min(list))
+# print("Sum of list values:", sum(list))
+# print("Is 25 in list?", 25 in list)
+# print("Is 50 not in list?", 50  not in list)
 
 
 tuple = (5, 10, 15, 10, 25, 10, 30)

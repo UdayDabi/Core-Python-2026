@@ -4,7 +4,7 @@ def KeyboardToFileCopy():
 
     while (text != "quit"):
         file.write(text)
-        file.write(" ")
+        file.write("\n")
         text = input('')
     file.close()
 

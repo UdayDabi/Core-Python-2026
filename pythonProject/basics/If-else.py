@@ -1,18 +1,6 @@
-# a = 1000
-# b= 2000
-#
-# if a > b:
-#      print(' a is greater')
-# else:
-#     print('b is greater')
-
-
-money = 19
-
+money = 99
 if money > 100:
-    print('I will buy a pizaa')
-elif money > 50:
-    print('I will buy a burger')
-elif money > 20:
-    print('I will buy a samosa')
+    print("I have enough money to buy a new phone.")
+else:
 
+    print("I don't have enough money to buy a new phone.")

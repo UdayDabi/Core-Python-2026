@@ -1,4 +1,3 @@
-numbers = [10, 20, 30, 40, 50]
-for a in numbers:
-     print(a)
-
+a = [10,20,30,40,50]
+for  i in a :
+    print(i)

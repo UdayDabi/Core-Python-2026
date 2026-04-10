@@ -8,7 +8,7 @@ Login_id = "Admin"
 Password = "Admin"
 
 try:
-    if Login_id == 'Admin' and Password == 'Admin':
+    if Login_id == 'Admn' and Password == 'Admin':
         print("Valid User")
 
     else:

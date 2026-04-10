@@ -1,10 +1,12 @@
 from datetime import datetime
 
 
+
 class Person:
     AVG_AGE = 18  # static constant
 
     def __init__(self):
+        print(" Cons is calliing  ther person class")
         self.__name = None
         self.__dob = None
         self.__address = None
@@ -40,7 +42,6 @@ class Person:
         return age
 
 
-
 p = Person()
 p.set_name("Uday")
 p.set_address("Indore")
@@ -49,4 +50,13 @@ p.set_dob(datetime(2000, 5, 15))
 print("Name:", p.get_name())
 print("Age:", p.get_age())
 print(p.get_dob())
+print(Person.AVG_AGE)
 
+p1 = Person()
+p1.set_name("Uday")
+p1.set_address("Indore")
+p1.set_dob(datetime(2000, 5, 15))
+
+print("Name:", p1.get_name())
+print("Age:", p1.get_age())
+print(p1.get_dob())

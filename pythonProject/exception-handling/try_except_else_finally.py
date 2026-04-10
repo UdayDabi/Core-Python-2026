@@ -2,7 +2,7 @@
 try:
     # Code jisme error aasakta hai
     a = 10
-    b = u
+    b = 5
     c = a / b
     print('division:', c)
 except ZeroDivisionError as e:
@@ -11,7 +11,7 @@ except ZeroDivisionError as e:
 except ValueError:
      print("Please number hi daalna tha")
 except Exception as e:
-    print('exception:', e)
+    print('Exception:', e)
 else:
     # Jab try me koi error NA aaye to ye chalega
     print('else block executed')

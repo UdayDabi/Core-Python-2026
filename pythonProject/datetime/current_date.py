@@ -1,5 +1,5 @@
 import  datetime
 
-today=datetime.date.today()
+today=datetime.datetime.today()
 
 print('today current date',today)

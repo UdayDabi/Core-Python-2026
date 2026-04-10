@@ -57,8 +57,9 @@ class Automobile:
 car = Automobile()
 car.set_color("Red")
 car.set_make("BMW")
+car.set_speed(450)
 
 car.accelerator()
 car.accelerator()
 car.brake()
-car.change_gear(1)
+car.change_gear(7)
